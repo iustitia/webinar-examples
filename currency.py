@@ -15,13 +15,3 @@ Odpytaj o walutę, odbierz odpowiedź, a potem wyłuskaj z nich potrzebną warto
 """
 ##############
 
-print(url)
-response = requests.get(url)
-print(response.content)
-d = {"Jan Kowalski": '213842348723', "Anna Nowak": '4534564365456', "Anna Wser": None}
-
-
-json_response = response.json()
-
-print(json_response)
-print(json_response['rates'][0]['mid'])

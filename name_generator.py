@@ -19,9 +19,4 @@ title = '{} z {} wygrywa właśnie nagrodę {} zł!'
 """
 import random
 
-name = random.choice(first_names)
-city = random.choice(cities)
-prize = random.randint(1000, 10000)
-
-print(title.format(name, city, prize))
 
